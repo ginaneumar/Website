@@ -16,12 +16,6 @@ header {
   margin-bottom: 0px;
 }
 
-.header-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
 
 .header-content {
   max-width: 1000px;
@@ -65,7 +59,7 @@ header {
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
-
+/* 
 @media only screen and (max-width: 600px) {
   .navigation ul {
     display: block;
@@ -73,7 +67,8 @@ header {
   .navigation li {
     margin: 10px 0;
   }
-}
+} */
+
 
 /* Image */
 
@@ -177,4 +172,35 @@ li {
 .data h2{
   margin: 25px;
 }
+
+.heading-container {
+  display: flex;
+  flex-direction: row;
+  grid-column: 1 / span 2;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading-container {
+    display: flex;
+    /* grid-column: 1 / span 2; */
+    flex-direction: column;
+  }
+  .contentPicture{
+    grid-column: 1 / span 1;
+    line-height: 1.5;
+    font-size: 25px;
+  }
+  .header-content{
+    height: 100px;
+  }
+  .navigation{
+    font-size: 30px;
+  }
+
+  .image{
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 
