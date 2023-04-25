@@ -43,7 +43,6 @@ header {
 
 /* Navigation */
 
-
 .navigation {
   display: flex;
   font-size: 1.2rem;
@@ -65,6 +64,15 @@ header {
   padding: 10px;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation ul {
+    display: block;
+  }
+  .navigation li {
+    margin: 10px 0;
+  }
 }
 
 /* Image */
@@ -129,6 +137,11 @@ img {
 #contentH1 {
   display: flex;
 }
+
+/* Mobile View */
+
+/* ?????????????? */
+
 
 
 /* Footer */
